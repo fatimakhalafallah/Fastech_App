@@ -1,0 +1,72 @@
+
+  <div class="row mt-5">
+    <div class="col-md-6 m-auto">
+        <h1 class="text-center mb-3">
+          <i class=""></i> Register
+        </h1>
+        <%- include ("./partials/message"); %>
+        <form action="/users/register" method="POST">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First Name"
+              class="form-control"
+              value="<%= typeof fname != 'undefined' ? fname : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              class="form-control"
+              placeholder="Last Name"
+              value="<%= typeof lname != 'undefined' ? lname : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Email"
+              class="form-control"
+              value="<%= typeof email != 'undefined' ? email : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Create Password"
+              class="form-control"
+              value="<%= typeof password != 'undefined' ? password : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input
+              type="password"
+              id="password2"
+              name="password2"
+              class="form-control"
+              placeholder="Confirm Password"
+              class="form-control"
+              value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Register
+          </button>
+        </form>
+        <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+      </div>
+    </div>
+  </div>

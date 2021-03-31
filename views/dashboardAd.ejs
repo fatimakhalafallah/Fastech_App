@@ -1,0 +1,28 @@
+<h1 class="mt-4">Dashboard</h1>
+          <p class="lead mb-3"> <b>   </b>  </p> </p> 
+          <div>
+               </div>
+<form action="/index/dashboardAd" method="POST">
+    <div class="form-group">
+      <% data.forEach(function(data){ %>
+        <div> User Message:</div>
+        <ul>
+          <li><%=data._id%> </li>
+          <li><%=data.message%></li>
+          <li><%=data.email%></li>
+         </ul>
+        </div>
+      <% }); %>
+    </div>
+
+
+    <div  class="form-group">
+      </div>
+
+</form>
+
+
+<div  class="form-group">
+    <a href="/users/logout" class="btn btn-secondary">Logout</a>
+    </div>
+

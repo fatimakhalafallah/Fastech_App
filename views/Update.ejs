@@ -1,0 +1,57 @@
+
+  <div class="row mt-5">
+    <div class="col-md-6 m-auto">
+        <h1 class="text-center mb-3">
+          <i class=""></i> Update
+        </h1>
+        <%- include ("./partials/message"); %>
+        <form action="/users/Update" method="POST">
+            <div class="form-group"> <b> 	
+                Please enter your email & Password </b></div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                />
+              </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                  
+                />
+              </div>
+              <div class="form-group"> <b> Update:</b></div>
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              class="form-control"
+            />
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">
+            Save
+          </button>
+        </form>
+       
+      </div>
+    </div>
+  </div>
